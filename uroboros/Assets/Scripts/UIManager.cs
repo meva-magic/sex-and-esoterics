@@ -20,7 +20,7 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
-        //SetMenu();
+        SetMenu();
     }
 
     private void Update()
@@ -49,7 +49,7 @@ public class UIManager : MonoBehaviour
     {
         DisableUI();
         Time.timeScale = 0;
-        winScreen.SetActive(true);
+        menuScreen.SetActive(true);
     }
 
     public void SetWin()

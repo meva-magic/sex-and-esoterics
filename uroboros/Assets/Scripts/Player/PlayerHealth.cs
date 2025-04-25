@@ -20,5 +20,11 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(float damageAmount)
     {
         health -= damageAmount;
+
+        if (health <= 0)
+        {
+            UIManager.instance.SetDeath();
+            health = 0;
+        }
     }
 }
